@@ -4,7 +4,9 @@
 [![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges)
 [![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-Online educational platforms are enabling learners to consume a great variety of content and share opinions on their learning experience. The analysis of the sentiment behind such a collective intelligence represents a key element for supporting both instructors and learning institutions on shaping the offered educational experience. Combining Word Embedding representations and Deep Learning architectures has made possible to design Sentiment Analysis systems able to accurately measure the text polarity on several contexts. However, the application of such representations and architectures on educational data still appears limited. Therefore, considering the over-sensitiveness of the emerging models to the context where the training data is collected, conducting adaptation processes that target the e-learning context becomes crucial to unlock the full potential of a model. In this chapter, we describe a Deep Learning approach that, starting from Word Embedding representations, measures the sentiment polarity of textual reviews posted by learners after attending online courses. Then, we demonstrate how Word Embeddings trained on smaller e-learning-specific resources are more effective with respect to those trained on bigger general-purpose resources. Moreover, we show the benefits achieved by combining Word Embeddings representations with Deep Learning architectures instead of common Machine Learning models. We expect that this chapter will help stakeholders to get a clear view and shape the future research on this field. 
+This repository contains the resources outcome of the work "*Deep Learning Adaptation with Word Embeddings for Sentiment Analysis on Online Course Reviews.*".
+
+The code allows you to create a Deep Learning approach that, starting from Word Embedding representations, measures the sentiment polarity of textual reviews posted by learners after attending online courses.
 
 ## Installation 
 
@@ -41,7 +43,7 @@ $ python ./dl-sentiment-coco/code/comment_splitter.py
 ```
 
 Create a folder *data* and copy the online course review dataset together with its splitted files
-available at [this link](). 
+available at [this link](https://drive.google.com/file/d/1aZgJAhanQjKV3Gzscx0bjs6_kbImQIKF/view?usp=sharing). 
 
 #### Create context-specific embeddings from the embedding generation file. 
 
@@ -51,7 +53,7 @@ Below you can find a sample embedding generation command:
 ...
 ```
 
-Create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](). 
+Create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](https://drive.google.com/file/d/1guu3WT-FaF-keWW1NHBdNRkpvU6g5KRO/view?usp=sharing). 
 
 #### Train and test your model from context-specific embeddings and train/test comments files. 
 
@@ -76,7 +78,7 @@ python ./dl-sentiment-coco/code/score_trainer_tester.py
 ```
 
 Create two nested folders *models/class2/* and *results/class2* and copy the models and results 
-available at [this link](). 
+available at [this link](https://drive.google.com/file/d/1pW3XYpfhOvXbXGtQOgu_zC06IupCqKmB/view?usp=sharing). 
 
 ## Contributing
 We welcome contributions. Feel free to file issues and pull requests on the repo and we will address them as we can.
@@ -94,7 +96,7 @@ In: Deep Learning based Approaches for Sentiment Analysis, Springer.
 
 ```
 Dessì, D., Dragoni, M., Fenu, G., Marras, M., & Recupero, D. R. (2019). 
-Evaluating neural word embeddings created from online course reviews for sentiment analysis. 
+Evaluating Neural Word Embeddings Created from Online Course Reviews for Sentiment Analysis. 
 In: Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing, 2124-2127, ACM.
 ```
 
