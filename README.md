@@ -66,15 +66,13 @@ If you use this source code in your research, please cite the following entries.
 ```
 Dessì, D., Dragoni, M., Fenu, G., Marras, M., Reforgiato, D. (2019). 
 Deep Learning Adaptation with Word Embeddings for Sentiment Analysis on Online Course Reviews. 
-Book on Deep Learning based Approaches for Sentiment Analysis. 
-Springer.
+In: Deep Learning based Approaches for Sentiment Analysis, Springer.
 ```
 
 ```
-Dessì, D., Dragoni, M., Fenu, G., Marras, M., Reforgiato, D. (2019). 
-Evaluating Neural Word Embeddings Created from Online Course Reviews for Sentiment Analysis. 
-Proceedings of the 34th ACM/SIGAPP Symposium On Applied Computing (SAC2019). 
-Springer.
+Dessì, D., Dragoni, M., Fenu, G., Marras, M., & Recupero, D. R. (2019). 
+Evaluating neural word embeddings created from online course reviews for sentiment analysis. 
+In: Proceedings of the 34th ACM/SIGAPP Symposium on Applied Computing, 2124-2127, ACM.
 ```
 
 ## Credits and License
