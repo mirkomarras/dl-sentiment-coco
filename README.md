@@ -58,8 +58,7 @@ Create the nested folders *embeddings/specific* and copy the context-specific em
 The *traintest_file* should be a comma-separated csv file including two columns: (i) *comment_field* that lists the
 comments and (ii) *score_field* that lists the scores associated to the comments. The script creates models, subsequently 
 instantiated with embeddings dictionaries from *embs_dir*, able to assign one of *n_classes* classes to a comment with 
-*max_len* words. Each model is trained for *n_epochs* by grouping samples in batches of size *batch_size*, and tested by
-using stratified *n_fold* cross-validation. 
+*max_len* words. Each model is trained for *n_epochs* on batches of size *batch_size*, and tested through stratified *n_fold* cross-validation. 
 
 Below you can find a sample train/test command:
 
