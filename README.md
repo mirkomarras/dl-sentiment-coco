@@ -24,26 +24,47 @@ $ pip install -r dl-sentiment-coco/requirements.txt
 
 ## Usage
 
-Split your comments in train/test comments and embedding generation comments. The entire dataset should be a standard
-csv file. The csv file should include a field that represents the score associated to the comment. Please download a
-sample dataset together with sample splitted files from [this link](). Below you can find a sample splitting command: 
+#### Prepare data for embedding generation, sentiment prediction training and testing.
+
+The *entire_file* should be a comma-separated csv file including a column *score_field* that lists the scores associated 
+to the comments. The script creates two files: (i) *traintest_file* for sentiment training and test and (ii) *embs_file* 
+for embedding generation. For sentiment prediction testing, *samples_per_class* samples per class are selected.
+
+Below you can find a sample splitting command: 
 ```
-$ python comment_splitter.py 
---entire_file "data/entire_course_comments.csv" 
+$ python ./dl-sentiment-coco/code/comment_splitter.py 
+--entire_file "./dl-sentiment-coco/data/entire_course_comments.csv" 
 --score_field "learner_rating" 
---traintest_file "data/traintest_course_comments.csv" 
---embs_file "data/embs_course_comments.csv" 
+--traintest_file "./dl-sentiment-coco/data/traintest_course_comments.csv" 
+--embs_file "./dl-sentiment-coco/data/embs_course_comments.csv" 
 --samples_per_class 6500
 ```
-Create context-specific embeddings from the embedding generation file. Please download sample context specific embeddings from 
-[this link](). Below you can find a sample generation command:
+
+Create a folder *data* within the project and copy the online course review dataset together with its splitted files
+available at [this link](). 
+
+#### Create context-specific embeddings from the embedding generation file. 
+
+Below you can find a sample embedding generation command:
+
 ```
 ...
 ```
-Train and test your model from context-specific embeddings and train/test comments files. Please download sample models 
-and results from [this link](). Below you can find a sample train/test command:
+
+Create the nested folders *embeddings/specific* within the project and copy the context-specific embeddings available at [this link](). 
+
+#### Train and test your model from context-specific embeddings and train/test comments files. 
+
+The *traintest_file* should be a comma-separated csv file including two columns: (i) *comment_field* that lists the
+comments and (ii) *score_field* that lists the scores associated to the comments. The script creates models, subsequently 
+instantiated with embeddings dictionaries from *embs_dir*, able to assign one of *n_classes* classes to a comment with 
+*max_len* words. Each model is trained for *n_epochs* by grouping samples in batches of size *batch_size*, and tested by
+using stratified *n_fold* cross-validation. 
+
+Below you can find a sample train/test command:
+
 ```
-python score_trainer_tester.py 
+python ./dl-sentiment-coco/code/score_trainer_tester.py 
 --traintest_file "data/traintest_course_comments.csv" 
 --comment_field "learner_comment" 
 --score_field "learner_rating" 
@@ -54,6 +75,9 @@ python score_trainer_tester.py
 --batch_size 512 
 --n_fold 5
 ```
+
+Create two nested folders *models/class2/* and *results/class2* within the project and copy the models and results 
+available at [this link](), respectively. 
 
 ## Contributing
 We welcome contributions. Feel free to file issues and pull requests on the repo and we will address them as we can.
