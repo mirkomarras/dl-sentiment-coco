@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges)
 [![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
-This repository contains the resources outcome of the work "*Deep Learning Adaptation with Word Embeddings for Sentiment Analysis on Online Course Reviews.*".
+This repository contains the resources outcome of the work "*Deep Learning Adaptation with Word Embeddings for Sentiment Analysis on Online Course Reviews*".
 
 The code allows you to create a Deep Learning approach that, starting from Word Embedding representations, measures the sentiment polarity of textual reviews posted by learners after attending online courses.
 
