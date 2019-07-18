@@ -76,7 +76,7 @@ python ./dl-sentiment-coco/code/score_trainer_tester.py
 ```
 
 Create two nested folders *models/class2/* and *results/class2* and copy the models and results 
-available at [this link](), respectively. 
+available at [this link](). 
 
 ## Contributing
 We welcome contributions. Feel free to file issues and pull requests on the repo and we will address them as we can.
