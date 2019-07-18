@@ -40,7 +40,7 @@ $ python ./dl-sentiment-coco/code/comment_splitter.py
 --samples_per_class 6500
 ```
 
-Create a folder *data* within the project and copy the online course review dataset together with its splitted files
+Create a folder *data* and copy the online course review dataset together with its splitted files
 available at [this link](). 
 
 #### Create context-specific embeddings from the embedding generation file. 
@@ -51,7 +51,7 @@ Below you can find a sample embedding generation command:
 ...
 ```
 
-Create the nested folders *embeddings/specific* within the project and copy the context-specific embeddings available at [this link](). 
+Create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](). 
 
 #### Train and test your model from context-specific embeddings and train/test comments files. 
 
@@ -76,7 +76,7 @@ python ./dl-sentiment-coco/code/score_trainer_tester.py
 --n_fold 5
 ```
 
-Create two nested folders *models/class2/* and *results/class2* within the project and copy the models and results 
+Create two nested folders *models/class2/* and *results/class2* and copy the models and results 
 available at [this link](), respectively. 
 
 ## Contributing
