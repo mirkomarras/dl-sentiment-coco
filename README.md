@@ -47,7 +47,14 @@ available at [this link](https://drive.google.com/file/d/1aZgJAhanQjKV3Gzscx0bjs
 
 #### Create context-specific embeddings from the embedding generation file. 
 
-Below you can find a sample embedding generation command:
+ <!--Below you can find a sample embedding generation command:-->
+ You can create your own embeddings on your set of data.
+ 
+ **Glove**: you must download the sources from [here](https://github.com/stanfordnlp/GloVe) and then change the file *demo.sh* to fit your settings.
+ 
+ **FastText**: you must download the sources from [here](https://github.com/facebookresearch/fastText/). Details about to use the library are explained in the same link.  
+ 
+ **Word2Vec**: you can use the script *code/word2vec.py* we included in this repository. Change the script according to your settings.
 
 ```
 ...
