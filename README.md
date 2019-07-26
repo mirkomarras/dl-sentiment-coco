@@ -48,20 +48,33 @@ available at [this link](https://drive.google.com/file/d/1aZgJAhanQjKV3Gzscx0bjs
 #### Create context-specific embeddings from the embedding generation file. 
 
  <!--Below you can find a sample embedding generation command:-->
- You can create your own embeddings on your set of data.
+ You can create your own embeddings on your set of data. You can choose to use the official toolkits.
  
  **Glove**: you must download the sources from [here](https://github.com/stanfordnlp/GloVe) and then change the file *demo.sh* to fit your settings.
  
  **FastText**: you must download the sources from [here](https://github.com/facebookresearch/fastText/). Details about the use of the library are explained in the same link.  
  
- **Word2Vec**: you can use the script *code/word2vec.py* we included in this repository. Change the script according to your settings.
+ **Word2Vec**: we use the [*gensim*](https://radimrehurek.com/gensim/index.html) python library to build word2vec embeddings.
 
-To create the embeddings on our data you can also download the [zip archive] and run the script generate_embeddings.py. It will create a subdirectory ./embeddings where all types of embeddings will be saved.
+As an alternative, you can download this [zip archive]() and run the following. It will create a subdirectory ./embeddings where the chosen type of embeddings will be generated.
+
+First, install the requirements with:
 ```
-...
+pip install -r requirements
 ```
 
-Create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](https://drive.google.com/file/d/1guu3WT-FaF-keWW1NHBdNRkpvU6g5KRO/view?usp=sharing). 
+Then, use the following command:
+```
+python generate_emeddings.py
+--input-file "myfile.txt"   # default: reviews.txt 
+--emb-size 100              # default: 100
+--iter 10                   # default: 5
+--workers 2                 # default: 4
+--min-count 5               # default:5
+--type "glove"              # default:word2vec
+```
+
+If you want to use our trained embeddings you must create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](https://drive.google.com/file/d/1guu3WT-FaF-keWW1NHBdNRkpvU6g5KRO/view?usp=sharing). 
 
 #### Train and test your model from context-specific embeddings and train/test comments files. 
 
