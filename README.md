@@ -52,10 +52,11 @@ available at [this link](https://drive.google.com/file/d/1aZgJAhanQjKV3Gzscx0bjs
  
  **Glove**: you must download the sources from [here](https://github.com/stanfordnlp/GloVe) and then change the file *demo.sh* to fit your settings.
  
- **FastText**: you must download the sources from [here](https://github.com/facebookresearch/fastText/). Details about to use the library are explained in the same link.  
+ **FastText**: you must download the sources from [here](https://github.com/facebookresearch/fastText/). Details about the use of the library are explained in the same link.  
  
  **Word2Vec**: you can use the script *code/word2vec.py* we included in this repository. Change the script according to your settings.
 
+To create the embeddings on our data you can also download the [zip archive] and run the script generate_embeddings.py. It will create a subdirectory ./embeddings where all types of embeddings will be saved.
 ```
 ...
 ```
