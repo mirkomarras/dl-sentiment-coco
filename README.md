@@ -70,8 +70,8 @@ python generate_emeddings.py
 --emb-size 100              # default: 100
 --iter 10                   # default: 5
 --workers 2                 # default: 4
---min-count 5               # default:5
---type "glove"              # default:word2vec
+--min-count 5               # default: 5
+--type "glove"              # default: word2vec
 ```
 
 If you want to use our trained embeddings you must create the nested folders *embeddings/specific* and copy the context-specific embeddings available at [this link](https://drive.google.com/file/d/1guu3WT-FaF-keWW1NHBdNRkpvU6g5KRO/view?usp=sharing). 
