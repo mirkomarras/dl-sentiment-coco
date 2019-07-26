@@ -56,7 +56,7 @@ available at [this link](https://drive.google.com/file/d/1aZgJAhanQjKV3Gzscx0bjs
  
  **Word2Vec**: we use the [*gensim*](https://radimrehurek.com/gensim/index.html) python library to build word2vec embeddings.
 
-As an alternative, you can download this [zip archive]() and run the following. It will create a subdirectory ./embeddings where the chosen type of embeddings will be generated.
+As an alternative, you can download this [zip archive](https://drive.google.com/file/d/1ucHa1otMkFsYCz-S2t5KQEM2hFC9rO5j/view?usp=sharing) and run the following. It will create a subdirectory ./embeddings where the chosen type of embeddings will be generated.
 
 First, install the requirements with:
 ```
@@ -65,7 +65,7 @@ pip install -r requirements
 
 Then, use the following command:
 ```
-python generate_emeddings.py
+python generate_embeddings.py
 --input-file "myfile.txt"   # default: reviews.txt 
 --emb-size 100              # default: 100
 --iter 10                   # default: 5
